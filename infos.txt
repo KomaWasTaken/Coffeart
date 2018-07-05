@@ -1,0 +1,45 @@
+Fichier texte  de récap "Wikicafé"
+
+Base de donnés : arabica_data_cleaned
+Nom de la base de données : ....
+Base du site : konstolymp.gr (couleurs, dispositions, font, etc...)
+
+
+Idées : 
+- Pictogram de couleurs pour la couleur de chaque café 
+- Création d'un logo (à faire à la fin du projet) 
+- Une page home avec possiblité de sélectionner en fonction de : ? 
+- 5 meilleurs café acide, doux etc... 
+- 
+
+
+Nom du site : 
+
+
+
+
+
+A faire : 
+- Renommer les collones
+- Wireframe 
+- Mock-up 
+- 
+
+
+Consignes : 
+- Mettre en ligne régulièrement ! 
+- Utilisation de GIT avec définition des noms en commun et utilisable par tous ! 
+- 
+
+
+Couleurs : 
+
+white/grey : #F4F4F0
+green : #394C23
+brown : #62413B
+
+
+Font : 
+
+
+
