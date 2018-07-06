@@ -1,0 +1,55 @@
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+  }
+  @mixin bp-xsmall {
+    @media only screen and (max-width: 575.98px) {
+      @content;
+    }
+  }
+  
+  @mixin bp-small {
+    @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+      @content;
+    }
+  }
+  
+  @mixin bp-medium {
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+      @content;
+    }
+  }
+  @mixin bp-large {
+    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+      @content;
+    }
+  }
+  @mixin bp-xlarge {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @mixin fonts($font, $weight, $size) {
+    font-family: $font;
+    font-weight: $weight;
+    font-size: calculateRem($size);
+    font-size: $size; //backup en px
+}
+
+$total : 12;
+
+@function column-width($col){
+  @return percentage($col/$total);
+}
+@for $i from 1 through $total {
+  .col-#{$i} 
+  {width: column-width($i) };
+}
+@function offset-width($offset){
+  @return percentage($offset/$total);
+}
+@for $i from 1 through $total{
+  .offset-#{$i}
+  {margin-left: offset-width($i)};
+}

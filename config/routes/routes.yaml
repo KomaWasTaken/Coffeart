@@ -1,0 +1,4 @@
+app_lucky_number:
+
+  path: /index
+  controller: App\Controller\IndexController::index

@@ -55,4 +55,10 @@ Déterminer où et comment on pourrait placer des PNG découpés sur la page, et
 les assortir au mieux au contenu de page (cf site sur les olives).
 
 
+A faire ensuite : 
+
+"Creating an entity class"   ->  https://symfony.com/doc/current/doctrine.html
+
+
+
 
