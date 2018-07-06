@@ -1,4 +1,4 @@
-Fichier texte  de récap "Wikicafé"
+﻿Fichier texte  de récap "Wikicafé"
 
 Base de donnés : arabica_data_cleaned
 Nom de la base de données : ....
@@ -40,6 +40,19 @@ brown : #62413B
 
 
 Font : 
+font-family: 'Encode Sans Condensed', sans-serif; (Pour les titres et sous-titres)
+font-family: 'Merriweather', serif; (Pour le texte descriptif)
+
+
+Suggestions modifs wireframe : Peut-être replacer la fonction de recherche vers la liste des meilleurs produits.
+Ajouter une 3ème font.
+
+
+Précisions pour le maquettage et l'intégration :
+
+Déterminer si le logo arrondi reste en position fixed ou absolute.
+Déterminer où et comment on pourrait placer des PNG découpés sur la page, et comment
+les assortir au mieux au contenu de page (cf site sur les olives).
 
 
 
