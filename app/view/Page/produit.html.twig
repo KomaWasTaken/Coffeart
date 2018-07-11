@@ -1,0 +1,24 @@
+{% extends 'Layout/layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Produit</title>
+{% endblock %}
+
+{% block content %}
+
+<p>Ceci est la page produit: {{ result.ID}}</p>
+{{ result.COF_OWNER}}
+
+{{ result.COF_COLOR}}
+
+{{ result.COF_COUNTRY_ORIGIN}}
+{{ result.COF_REGION}}
+
+{{ result.COF_AROMA}}
+{{ result.COF_FLAVOR}}
+{{ result.COF_ACIDITY}}
+{{ result.COF_SWEETNESS}}
+
+{{ result.COF_ALTITUDE}}
+
+{% endblock %}
