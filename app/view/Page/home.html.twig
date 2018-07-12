@@ -6,29 +6,26 @@
 
 {% block content %}
 
-<p>DOUX</p>
-    {% for coffee in sweetness %} {# BLOC TRI DOUX #}
-        {{  coffee.COF_SWEETNESS }}
-        {{  coffee.COF_COUNTRY_ORIGIN }}
-        {{  coffee.COF_OWNER }}
-        <a href="produit/{{coffee.ID}}">lien</a>
-    {% endfor %}
-
-<p>ACID</p>
-    {% for coffee in acid %} {# BLOC TRI ACID #}
-        {{  coffee.COF_ACIDITY }}
-        {{  coffee.COF_COUNTRY_ORIGIN }}
-        {{  coffee.COF_OWNER }}
-        <a href="produit/{{coffee.ID}}">lien</a>
-    {% endfor %}
-
-<p>BALANCE</p>
-    {% for coffee in balance %} {# BLOC TRI BALANCE #}
-        {{  coffee.COF_BALANCE }}
-        {{  coffee.COF_COUNTRY_ORIGIN }}
-        {{  coffee.COF_OWNER }}
-        <a href="produit/{{coffee.ID}}">lien</a>
-    {% endfor %}
-
+<div class="bg-img-1 w-100 h-100vh d-flex a-i-center j-c-center">
+    <img class="w-25 h-auto" src="./assets/img/coffee-beans.png">
+    <div class="d-flex flex-direction-column">
+        <p>LOREM IPSUM DOLOR SIT AMET</p>
+        <a href="#">Découvrir nos cafés</a>
+    </div>
+</div>
+<div class="h-100vh d-flex a-i-center">
+    <div class="w50 h-50 d-flex j-c-between flex-direction-column">
+        <div>
+            <p>Notre café arabica</p>
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+        </div>
+        <div>
+            <p>Découvrir nos cafés</p>
+        <div>
+    </div>
+    <div class="w50">
+        <img class="w-50 h-auto" src="./assets/img/labels_coffeart.png">
+    </div>
+</div>
 
 {% endblock %}

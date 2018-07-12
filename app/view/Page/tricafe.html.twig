@@ -1,0 +1,34 @@
+{% extends 'Layout/layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Home</title>
+{% endblock %}
+
+{% block content %}
+
+<p>DOUX</p>
+    {% for coffee in sweetness %} {# BLOC TRI DOUX #}
+        {{  coffee.COF_SWEETNESS }}
+        {{  coffee.COF_COUNTRY_ORIGIN }}
+        {{  coffee.COF_OWNER }}
+        <a href="produit/{{coffee.ID}}">lien</a>
+    {% endfor %}
+
+<p>ACID</p>
+    {% for coffee in acid %} {# BLOC TRI ACID #}
+        {{  coffee.COF_ACIDITY }}
+        {{  coffee.COF_COUNTRY_ORIGIN }}
+        {{  coffee.COF_OWNER }}
+        <a href="produit/{{coffee.ID}}">lien</a>
+    {% endfor %}
+
+<p>BALANCE</p>
+    {% for coffee in balance %} {# BLOC TRI BALANCE #}
+        {{  coffee.COF_BALANCE }}
+        {{  coffee.COF_COUNTRY_ORIGIN }}
+        {{  coffee.COF_OWNER }}
+        <a href="produit/{{coffee.ID}}">lien</a>
+    {% endfor %}
+
+
+{% endblock %}
