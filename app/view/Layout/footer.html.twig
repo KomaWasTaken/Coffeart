@@ -5,3 +5,17 @@
 <!--JavaScript at end of body for optimized loading-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="./assets/js/script.js"></script>
+
+
+
+<script>
+      // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    var menu_burger = document.getElementById("navigation");
+    menu_burger.classList.toggle("disp_none");
+  });
+</script>
