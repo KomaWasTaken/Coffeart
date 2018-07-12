@@ -60,6 +60,9 @@ html{size: 62.5%;}
 .m-15{margin:15px;}
 .m-20{margin:20px;}
 
+.m-social {margin-right:20px;}
+.m-t-50   {margin-top:50px  ;}
+
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  FLEX PROPERTIES  /////////////////////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
@@ -87,6 +90,7 @@ html{size: 62.5%;}
 
 .j-c-end {
     justify-content: flex-end; }
+
 .j-s-flex-end {
     justify-self: flex-end;}
 
@@ -106,6 +110,8 @@ html{size: 62.5%;}
     color: #394c23; }
 .color-4 {
     color: #53312B; }
+.color-5 {
+    color: #AA756F; }
 
 .bg-img-1{
     background: url("../img/bg_coffee1.jpg") center center no-repeat;
@@ -125,7 +131,11 @@ html{size: 62.5%;}
 /////////////////////////////////////  FONT STUFF  /////////////////////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
 
-.fs-20{font-size:2rem;}
+body { font-size: 62.5%; }
+
+.fs-nav {font-size:4.4rem;}
+.fs-20  {font-size:2rem;}
+.fs-18  {font-size:1.8rem;}
 
 .encodeSansCondensed{
     font-family:
@@ -144,3 +154,23 @@ html{size: 62.5%;}
 
 
 .disp_none { display: none;}
+
+
+.menu_cool {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display:flex;
+    justify-content: end;
+}
+
+
+/*/////////////////////////////////////  /////////////////////////////////////
+/////////////////////////////////////  STYLE  /////////////////////////////////////
+/////////////////////////////////////  /////////////////////////////////////*/
+
+.no_line {text-decoration: none;}
+.center  {margin: 0 auto;}
+.fixed   {position: fixed;}
+
