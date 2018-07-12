@@ -6,6 +6,9 @@
 .w-75{width:75%;}
 .w-50{width:50%;}
 .w-25{width:25%;}
+.w-55{width: 55%;}
+
+
 
 .h-100{height:100%;}
 .h-75{height:75%;}
@@ -13,6 +16,12 @@
 .h-25{height:25%;}
 
 .h-100vh{height:100vh;}
+
+
+.logo{
+    width: 130px;
+    height: auto;
+}
 
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  PADDINGS && MARGINS  /////////////////////////////////////
@@ -53,51 +62,70 @@
 /////////////////////////////////////  /////////////////////////////////////*/
 
 .d-flex {
-  display: flex; }
+    display: flex; }
 
 .flex-direction-column {
-  flex-direction: column; }
+    flex-direction: column; }
 
 .flex-direction-row {
-  flex-direction: row; }
+    flex-direction: row; }
 
 .a-i-center {
-  align-items: center; }
-
+    align-items: center; }
+    
 .j-c-center {
-  justify-content: center; }
+    justify-content: center; }
 
 .j-c-around {
-  justify-content: space-around; }
+    justify-content: space-around; }
 
 .j-c-between {
     justify-content: space-between; }
 
 .j-c-end {
-  justify-content: flex-end; }
+    justify-content: flex-end; }
+.j-s-flex-end {
+    justify-self: flex-end;}
+
+.j-s-center{ 
+    justify-self: center;}
+
 
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  COLORS && BACKGROUNDS  /////////////////////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
 
-.color-1 {
-  color: #ffffff; }
+.color-1{
+    color: #222222; }
+.color-2 {
+    color: #f4f4f0; }
+.color-3 {
+    color: #394c23; }
+.color-4 {
+    color: #53312B; }
 
 .bg-img-1{
     background: url();
 }
 
 .bg-color-1{
-    background-color:#fff;
+    background-color:#f4f4f0;
 }
+
 
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  FONT STUFF  /////////////////////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
 
 .fs-20{font-size:20px;}
-.montserrat{
+
+.encodeSansCondensed{
     font-family:
-    'Montserrat',
+    'Encode Sans Condensed',
     'sans serif'
+;}
+.Merriweather{
+    font-family:
+    'Merriweather',
+    'serif'
 ;}

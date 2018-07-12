@@ -24,4 +24,8 @@ yarn-error.log
 
 .htaccess
 
+app/config.php
+
+app/functions.common.php
+
 
