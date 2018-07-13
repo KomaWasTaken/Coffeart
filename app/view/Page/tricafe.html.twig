@@ -6,29 +6,115 @@
 
 {% block content %}
 
-<p>DOUX</p>
-    {% for coffee in sweetness %} {# BLOC TRI DOUX #}
-        {{  coffee.COF_SWEETNESS }}
-        {{  coffee.COF_COUNTRY_ORIGIN }}
-        {{  coffee.COF_OWNER }}
-        <a href="produit/{{coffee.ID}}">lien</a>
-    {% endfor %}
+<!-- Bloc découverte-->
+<section class="bg-img-1 w-100 h-100vh d-flex a-i-center j-c-around">
+    <div class="d-flex j-c-center a-i-center h-50 w-50">
+        <img class="w-75 h-auto" src="./assets/img/coffee-beans.png">
+    </div>
+    <div class="d-flex flex-direction-column j-c-around h-50 w-35">
+        <div class="d-flex flex-direction-column">
+            <a href="#" class="fs-30 color-3 text-decoration-none p-b-15">Découvrir nos cafés</a>
+            <span class="span-borders"></span>
+        </div>
+        <p class="fs-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="fs-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="d-flex j-c-between a-i-center">
+            <img class="w-17 h-auto  p-t-20" src="./assets/img/badge_blue_green.png">
+            <img class="w-17 h-auto  p-t-20" src="./assets/img/badge_blue_green_green.png">
+            <img class="w-17 h-auto  p-t-20" src="./assets/img/badge_green.png">
+            <img class="w-17 h-auto  p-t-20" src="./assets/img/badge_grey.png">
+        </div>
+    </div>
+</section>
 
-<p>ACID</p>
-    {% for coffee in acid %} {# BLOC TRI ACID #}
-        {{  coffee.COF_ACIDITY }}
-        {{  coffee.COF_COUNTRY_ORIGIN }}
-        {{  coffee.COF_OWNER }}
-        <a href="produit/{{coffee.ID}}">lien</a>
-    {% endfor %}
+<!-- Bloc gammes-->
+<section class="bg-color-1 w-100 h-150vh d-flex flex-direction-column j-c-evenly a-i-center">
+    <div class="d-flex flex-direction-column h-25 j-c-around text-center">
+        <p class="fs-30 color-3 text-decoration-none">Découvrir nos gammes</p>
+        <span class="span-borders-v m-l-50p"></span>
+        <p class="fs-30">DUO REGES:CONSTRUCTIO INTERRETE.</p>
+        <p class="fs-30">NIHILO MAGIS. ROGES ENI</p>
+        <p class="fs-30">DOLOR ERGO, ID EST</p>
+    </div>
+    
+    <div class="w-85 h-50 d-flex flex-direction-column j-c-between">
 
-<p>BALANCE</p>
-    {% for coffee in balance %} {# BLOC TRI BALANCE #}
-        {{  coffee.COF_BALANCE }}
-        {{  coffee.COF_COUNTRY_ORIGIN }}
-        {{  coffee.COF_OWNER }}
-        <a href="produit/{{coffee.ID}}">lien</a>
-    {% endfor %}
+        {# Gamme Doux #}
+        <div>
+            <p class="fs-30">Doux</p>
+            <div class="d-flex p-t-20">
+                {% for coffee in sweetness %}
+                <div class="d-flex a-i-center j-c-center w-100">
+                    <div class="text-center">
+                        <img class="w-25 h-auto" src="./assets/img/badge_{{ coffee.COF_COLOR }}.png">
+                        <p class="fs-14">{{  coffee.COF_SWEETNESS }}</p>
+                        <p class="fs-14">{{  coffee.COF_COUNTRY_ORIGIN }}</p>
+                        <p class="fs-14">{{  coffee.COF_OWNER }}</p>
+                        <a href="produit/{{coffee.ID}}" class="fs-14">Découvrir notre produit</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
 
+        {# Gamme Corsé #}
+        <div>
+            <p class="fs-30">Corsé</p>
+            <div class="d-flex p-t-20">
+                {% for coffee in sweetness %}
+                <div class="d-flex j-c-center w-100">
+                    <div class="text-center">
+                        <img class="w-25 h-auto" src="./assets/img/badge_{{ coffee.COF_COLOR }}.png">
+                        <p class="fs-14">{{  coffee.COF_SWEETNESS }}</p>
+                        <p class="fs-14">{{  coffee.COF_COUNTRY_ORIGIN }}</p>
+                        <p class="fs-14">{{  coffee.COF_OWNER }}</p>
+                        <a href="produit/{{coffee.ID}}" class="fs-14">Découvrir notre produit</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        {# Gamme Equilibré #}
+        <div>
+            <p class="fs-30">Equilibré</p>
+            <div class="d-flex p-t-20">
+                {% for coffee in sweetness %}
+                <div class="d-flex j-c-center w-100">
+                    <div class="text-center">
+                        <img class="w-25 h-auto" src="./assets/img/badge_{{ coffee.COF_COLOR }}.png">
+                        <p class="fs-14">{{  coffee.COF_SWEETNESS }}</p>
+                        <p class="fs-14">{{  coffee.COF_COUNTRY_ORIGIN }}</p>
+                        <p class="fs-14">{{  coffee.COF_OWNER }}</p>
+                        <a href="produit/{{coffee.ID}}" class="fs-14">Découvrir notre produit</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+{# Bloc Ending #}
+<section class="h-100vh w-100">
+
+    {# Citation #}
+    <div class="bg-color-1 h-35 j-c-center a-i-center d-flex flex-direction-column">
+        <div class="w-60">
+            <p class="fs-30 fw-bold">LOREM IPSUM DOLOR SIT</p>
+            <p class="fs-30 fw-bold">AMEM LOREM IPSUM</p>
+            <p class="fs-30 fw-bold">DOLOR SIT AMET</p>
+            <span class="color-3 fst-italic fs-20">Vincent Jacques</span>
+        </div>
+    </div>
+
+    {# Logo #}
+    <div class="bg-img-2 h-65 d-flex flex-direction-column a-i-center j-c-evenly">
+        <span class="span-borders-v2"></span>
+        <img src="./assets/img/logo_coffeart.png" alt"logo_coffeart">
+    </div>
+</section>
 
 {% endblock %}

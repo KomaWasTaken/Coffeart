@@ -17,8 +17,13 @@ class Router {
         if($parts[0] == "produit" && count($parts) == 2) {//route vers fiche film
            $result["controller"] = "Page";
            $result["action"] = "produit";
-           $result["params"]["id"] = $parts[1];            
+           $result["params"]["id"] = $parts[1];
+                     
         }
+        if($parts[0] == "tricafe") {//route vers fiche film
+            $result["controller"] = "Page";
+            $result["action"] = "tricafe";
+         }
      }
      return $result;
     }  

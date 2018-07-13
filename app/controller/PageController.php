@@ -29,5 +29,22 @@ class PageController extends Controller {
         ));
     }
 
+    public function tricafe(){
+
+        $sweetness = Home::getBySweetness();
+        $acid = Home::getByAcid();
+        $balance = Home::getByBalance();
+
+
+        $template = $this->twig->loadTemplate('/Page/tricafe.html.twig');
+        echo $template->render(array(
+            'sweetness' => $sweetness,
+            'acid' => $acid,
+            'balance' => $balance,
+        
+        )); 
+        
+    }
+
 
 }
