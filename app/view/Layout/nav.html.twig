@@ -1,22 +1,35 @@
-<header>
-    <nav role="navigation" class="d-flex j-c-end">
-        <div class="w-55 d-flex j-c-between a-i-center">
-            <img class="logo" src="./assets/img/logo.png" alt="logo">
-            
-                <div class="hamburger hamburger--elastic" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
-                    <div class="">
-                        <p>MENU</p>
-                    </div>
+<header class="w-100">
+    <img class="logo logo_center" src="./assets/img/logo.png" alt="logo">
+    <nav role="navigation" class="menu_cool z_1">
+        <div class="w-55 d-flex a-i-center j-c-end m-t-50">
+            <div class="hamburger hamburger--spring outline-none" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+                <div class="d-flex a-i-center">
+                    <p class="color-5 fs-20 encodeSansCondensed m-social">MENU</p>
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
                     </div>
                 </div>
-       <div id="navigation" class="disp_none h-100vh color-2 bg-color-menu">
-        <h1>HELLO WORLD</h1>
-        <h1>HELLO WORLD</h1>
-        <h1>HELLO WORLD</h1>
-        <h1>HELLO WORLD</h1>
-       </div>
-        </div>
+            </div>
+        </div>      
     </nav>
-</header>
+    <div id="navigation" class="fixed z_0 disp_none w-100 h-100vh encodeSansCondensed bg-color-menu">
+        <div class="d-flex j-c-between fs-20 color-5 a-i-center">
+            <a href="#" class="m-t-50 color-5 no_line m-home">HOME</a>
+        </div>
+        <div class="d-flex flex-direction-column h-75 j-c-center">
+            <div class ="w-50 center p-t-20 fs-nav color-5">
+                <p class="fs-18 p-b-20">DECOUVRIR</p>
+                <div class="d-flex flex-direction-column">
+                    <a href="#" class="color-5 no_line">HOME</a>
+                    <a href="#" class="color-5 no_line p-t-10">NOTRE SELECTION</a>
+                    <a href="#" class="color-5 no_line p-t-10">MENTIONS LEGALES</a>
+                </div>
+            </div>
+            <div class="w-50 center fs-nav color-2">
+                <a href="#" class="fa fa-facebook color-2 no_line m-social m-t-50"></a>
+                <a href="#" class="fa fa-twitter color-2 no_line m-social"></a>
+                <a href="#" class="fa fa-instagram color-2 no_line "></a>
+            </div>
+        </div>
+    </div>
+        </header>
