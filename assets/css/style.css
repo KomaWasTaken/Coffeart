@@ -5,11 +5,11 @@ html{size: 62.5%;}
 
 .w-100{width:100%;}
 .w-75{width:75%;}
+.w-60{width:60%;}
+.w-55{width:55%;}
 .w-50{width:50%;}
+.w-35{width:35%;}
 .w-25{width:25%;}
-.w-55{width: 55%;}
-
-
 
 .h-100{height:100%;}
 .h-75{height:75%;}
@@ -17,7 +17,6 @@ html{size: 62.5%;}
 .h-25{height:25%;}
 
 .h-100vh{height:100vh;}
-
 
 .h-auto{ height: auto;}
 
@@ -44,6 +43,7 @@ html{size: 62.5%;}
 .p-r-10{padding-right:10px;}
 .p-r-15{padding-right:15px;}
 .p-r-20{padding-right:20px;}
+.p-r-50{padding-right:50px;}
 
 .p-t-5{padding-top:5px;}
 .p-t-10{padding-top:10px;}
@@ -61,6 +61,7 @@ html{size: 62.5%;}
 .m-20{margin:20px;}
 
 .m-social {margin-right:20px;}
+.m-home   {margin-left:20px ;}
 .m-t-50   {margin-top:50px  ;}
 
 /*/////////////////////////////////////  /////////////////////////////////////
@@ -133,20 +134,25 @@ html{size: 62.5%;}
 
 body { font-size: 62.5%; }
 
-.fs-nav {font-size:4.4rem;}
-.fs-20  {font-size:2rem;}
-.fs-18  {font-size:1.8rem;}
+.fs-nav { font-size:4.4rem ;}
+.fs-18  { font-size:1.8rem ;}
+.fs-20  { font-size:2rem   ;}
+.fs-30  { font-size:3rem   ;}
+.fs-55  { font-size:5.5rem ;}
 
 .encodeSansCondensed{
     font-family:
     'Encode Sans Condensed',
     'sans serif'
 ;}
+
 .Merriweather{
     font-family:
     'Merriweather',
     'serif'
 ;}
+
+.text-justify{text-align: justify;}
 
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  MENU BURGER  /////////////////////////////////////
@@ -165,6 +171,7 @@ body { font-size: 62.5%; }
     justify-content: end;
 }
 
+.float {float: initial;}
 
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  STYLE  /////////////////////////////////////
@@ -173,4 +180,5 @@ body { font-size: 62.5%; }
 .no_line {text-decoration: none;}
 .center  {margin: 0 auto;}
 .fixed   {position: fixed;}
-
+.z_1 {z-index: 3;}
+.z_0 {z-index: 2;}
