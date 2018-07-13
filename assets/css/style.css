@@ -26,7 +26,8 @@ html{size: 62.5%;}
 .h-25vh{height:25vh;}
 .h-50vh{height:50vh;}
 .h-100vh{height:100vh;}
-.h-150vh{height:150vh;}
+.h-180vh{height:180vh;}
+.h-25vh  {height: 25vh;}
 
 .h-auto{ height: auto;}
 
@@ -125,7 +126,7 @@ html{size: 62.5%;}
 /////////////////////////////////////  /////////////////////////////////////*/
 
 .color-1{
-    color: #222222; }
+    color: #444444; }
 .color-2 {
     color: #f4f4f0; }
 .color-3 {
@@ -164,8 +165,10 @@ body { font-size: 62.5%; }
 .fs-nav { font-size:4.4rem ;}
 .fs-14  { font-size:1.4rem ;}
 .fs-18  { font-size:1.8rem ;}
+.fs-30  { font-size:3rem ;}
 .fs-20  { font-size:2rem   ;}
-.fs-30  { font-size:3rem   ;}
+.fs-40  { font-size:4rem   ;}
+.fs-45  { font-size:4.5rem ;}
 .fs-55  { font-size:5.5rem ;}
 
 .fst-italic { font-style: italic; }
@@ -183,11 +186,14 @@ body { font-size: 62.5%; }
     'Merriweather',
     'serif'
 ;}
+.fw-thin {font-weight: 300}
 
 .text-justify{text-align: justify;}
 .text-center{text-align:center;}
 .outline-none{outline:none;}
 .text-decoration-none{text-decoration:none;}
+
+.line_h {line-height: 3.5rem;}
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  MENU BURGER  /////////////////////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
@@ -214,6 +220,7 @@ body { font-size: 62.5%; }
 .no_line {text-decoration: none;}
 .center  {margin: 0 auto;}
 .fixed   {position: fixed;}
+.z_2 {z-index: 4;}
 .z_1 {z-index: 3;}
 .z_0 {z-index: 2;}
 .fixed{position:fixed;}
@@ -250,11 +257,23 @@ body { font-size: 62.5%; }
     border-top:1px solid #394c23;
 }
 
-
-
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  TRANSITION MENU  ///////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
 
-
 .transition { transition: all 0.5s ease ;}
+
+
+/*/////////////////////////////////////  /////////////////////////////////////
+/////////////////////////////////////   MEDIA QUERIES   ///////////////////////
+/////////////////////////////////////  /////////////////////////////////////*/
+
+@media (min-width: 576px) { 
+    
+ }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {  }
