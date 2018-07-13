@@ -73,6 +73,10 @@ html{size: 62.5%;}
 .m-15{margin:15px;}
 .m-20{margin:20px;}
 
+.m-social {margin-right:20px;}
+.m-home   {margin-left:20px ;}
+.m-t-50   {margin-top:50px  ;}
+
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  FLEX PROPERTIES  /////////////////////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
@@ -123,6 +127,8 @@ html{size: 62.5%;}
     color: #394c23; }
 .color-4 {
     color: #53312B; }
+.color-5 {
+    color: #AA756F; }
 
 .bg-img-1{
     background: url("../img/bg_coffee1.jpg") center center no-repeat;
@@ -142,9 +148,13 @@ html{size: 62.5%;}
 /////////////////////////////////////  FONT STUFF  /////////////////////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
 
-.fs-20{font-size:2rem;}
-.fs-30{font-size:3rem;}
-.fs-55{font-size:5.5rem;}
+body { font-size: 62.5%; }
+
+.fs-nav { font-size:4.4rem ;}
+.fs-18  { font-size:1.8rem ;}
+.fs-20  { font-size:2rem   ;}
+.fs-30  { font-size:3rem   ;}
+.fs-55  { font-size:5.5rem ;}
 
 .encodeSansCondensed{
     font-family:
@@ -168,7 +178,36 @@ html{size: 62.5%;}
 
 
 .disp_none { display: none;}
+
+
+.menu_cool {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display:flex;
+    justify-content: end;
+}
+
+
+
+/*/////////////////////////////////////  /////////////////////////////////////
+/////////////////////////////////////  STYLE  /////////////////////////////////////
+/////////////////////////////////////  /////////////////////////////////////*/
+
+.no_line {text-decoration: none;}
+.center  {margin: 0 auto;}
+.fixed   {position: fixed;}
+.z_1 {z-index: 3;}
+.z_0 {z-index: 2;}
 .fixed{position:fixed;}
+.absolute { position: absolute; }
+
+.logo_center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  BORDERS & STUFF  /////////////////////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
@@ -181,3 +220,12 @@ html{size: 62.5%;}
 .border-top-1{
     border-top:1px solid #394c23;
 }
+
+
+
+/*/////////////////////////////////////  /////////////////////////////////////
+/////////////////////////////////////  TRANSITION MENU  ///////////////////////
+/////////////////////////////////////  /////////////////////////////////////*/
+
+
+.transition { transition: all 0.5s ease ;}
