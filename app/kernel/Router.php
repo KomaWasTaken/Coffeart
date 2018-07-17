@@ -20,11 +20,6 @@ class Router {
            $result["params"]["id"] = $parts[1];
                      
         }
-        if($request === 'tricafe'){ // Route vers la page de tri du café
-            $result['controller']   = 'Page';
-            $result['action']       = 'tricafe';
-        }
-     }
      return $result;
     }  
 }
