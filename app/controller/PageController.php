@@ -29,5 +29,16 @@ class PageController extends Controller {
         ));
     }
 
+    public function resultat(){
+        $id = $this->route["params"]["id"];
+        $recherche = Home::getResultat($id);
+        $template = $this->twig->loadTemplate('/Page/resultat.html.twig');        
+        echo $template->render(array(
+            "result" => $recherche,      
+        ));
+        echo ('Oui bonjour');        
+    }
+
+
 
 }

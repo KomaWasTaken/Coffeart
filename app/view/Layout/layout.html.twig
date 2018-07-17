@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <base href="http://localhost/Coffeart/">
+        <base href="http://localhost/coffeart/">
         <!--Import Google Icon Font-->        
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -16,7 +16,10 @@
     </head>
     <body class="d-flex flex-direction-column a-i-center z_0" >
         {% include 'Layout/nav.html.twig' %}
-
+        <form action="resultat" method="GET" class="z_2 absolute">
+            <input type="text" name="result" >
+            <button type="submit" name="submitform">ENVOYER</button>
+        </form>
         <main class="bg-color-1 w-95 h-95">
             {% block content %}{% endblock %}
         </main>
