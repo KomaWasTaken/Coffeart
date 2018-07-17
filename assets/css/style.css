@@ -11,21 +11,24 @@ html{size: 62.5%;}
 .w-65{width:65%;}
 .w-55{width:55%;}
 .w-50{width:50%;}
+.w-45{width:45%;}
 .w-35{width:35%;}
 .w-25{width:25%;}
 .w-17{width:17%;}
-
+.w-10{width:10%;}
 
 .h-100{height:100%;}
 .h-95{height:95%;}
 .h-75{height:75%;}
+.h-65{height:65%;}
 .h-50{height:50%;}
+.h-35{height:35%;}
 .h-25{height:25%;}
 
 .h-25vh{height:25vh;}
 .h-100vh{height:100vh;}
 .h-180vh{height:180vh;}
-.h-25vh  {height: 25vh;}
+.h-25vh{height:25vh;}
 
 .h-auto{ height: auto;}
 
@@ -62,12 +65,13 @@ html{size: 62.5%;}
 .p-t-10{padding-top:10px;}
 .p-t-15{padding-top:15px;}
 .p-t-20{padding-top:20px;}
+.p-t-50{padding-top:50px;}
 
 .p-b-5{padding-bottom:5px;}
 .p-b-10{padding-bottom:10px;}
 .p-b-15{padding-bottom:15px;}
 .p-b-20{padding-bottom:20px;}
-
+.p-b-50{padding-bottom:50px;}
 
 .m-5{margin:5px;}
 .m-10{margin:10px;}
@@ -136,6 +140,11 @@ html{size: 62.5%;}
     background-size: cover;
 }
 
+.bg-img-2{
+    background: url("../img/bg_coffee2.jpg") center center no-repeat;
+    background-size: cover;
+}
+
 .bg-color-1{
     background-color:#f4f4f0;
 }
@@ -150,10 +159,10 @@ html{size: 62.5%;}
 /////////////////////////////////////  /////////////////////////////////////*/
 
 .fs-nav { font-size:4.4rem ;}
+.fs-18  { font-size:1.8rem ;}
+.fs-20  { font-size:2rem ;}
 .fs-30  { font-size:3rem ;}
-.fs-20  { font-size:2rem   ;}
-.fs-18  { font-size:1.8rem   ;}
-.fs-40  { font-size:4rem   ;}
+.fs-40  { font-size:4rem ;}
 .fs-45  { font-size:4.5rem ;}
 .fs-55  { font-size:5.5rem ;}
 
@@ -168,10 +177,15 @@ html{size: 62.5%;}
     'Merriweather',
     'serif'
 ;}
+
 .fw-thin {font-weight: 300}
+.fw-bold {font-weight: 700}
+
+.fs-italic {font-style: italic;}
 
 .text-justify{text-align: justify;}
 .text-center{text-align:center;}
+.text-right{text-align:right;}
 .outline-none{outline:none;}
 .text-decoration-none{text-decoration:none;}
 
@@ -222,6 +236,19 @@ html{size: 62.5%;}
     width:100px;
     height:1px;
 }
+
+.span-borders-vertical80{
+    border: 1px solid #394c23;
+    width:1px;
+    height:80px;
+}
+
+.span-borders-vertical120{
+    border: 1px solid #394c23;
+    width:1px;
+    height:120px;
+}
+
 .border-top-1{
     border-top:1px solid #394c23;
 }
