@@ -21,6 +21,7 @@ html{size: 62.5%;}
 .h-95{height:95%;}
 .h-75{height:75%;}
 .h-65{height:65%;}
+.h-85{height:85%;}
 .h-50{height:50%;}
 .h-35{height:35%;}
 .h-25{height:25%;}
@@ -28,7 +29,6 @@ html{size: 62.5%;}
 .h-25vh{height:25vh;}
 .h-100vh{height:100vh;}
 .h-180vh{height:180vh;}
-.h-25vh{height:25vh;}
 
 .h-auto{ height: auto;}
 
@@ -81,6 +81,8 @@ html{size: 62.5%;}
 .m-social {margin-right:20px;}
 .m-home   {margin-left:20px ;}
 .m-t-50   {margin-top:50px  ;}
+.m-t-10   {margin-top: 10px ;}
+.m-b-50   {margin-bottom: 50px;}
 
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  FLEX PROPERTIES  /////////////////////////////////////
@@ -264,6 +266,11 @@ html{size: 62.5%;}
 /////////////////////////////////////   MEDIA QUERIES   ///////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
 
+@media (max-width: 320px) and (max-height : 480px) {
+    .img-badge {width : 50%;}
+}
+
+
 @media (max-width: 576px) { 
     .d-none-mobile{display:none;}
     .fs-55{font-size:3rem;}
@@ -280,10 +287,17 @@ html{size: 62.5%;}
     .m-t-25-mobile{margin-top:25px;}
     .line_h_normal_mobile{line-height:normal;}
     .h-100vh{height:80vh;}
+    .logo-mobile {width: 100px;}
+    .m-top-mobile {margin-top : 10px;}
+    .h-100mobile{height: 100vh;}
+    .w-mobile-txt {width : 90%}
+    .align-mobile {margin: 0 auto;}
+
+ 
  }
 
 @media (min-width: 577px) and (max-width: 768px) { 
-
+    .d-none-tablet {display:none;}
     .fs-55{font-size:4rem;}
     .fs-45{font-size:2.75rem;}
     .fs-30{font-size:2.3rem;}
@@ -295,7 +309,18 @@ html{size: 62.5%;}
     .j-c-center-tablet{justify-content:center;}
     .j-c-around-tablet{justify-content:space-around;}
     .line_h_normal_mobile{line-height:normal;}
-   
+    .h-100mobile{height: 100vh;}
+    .logo-mobile {width: 100px;}
+    .m-top-mobile {margin-top : 10px;}
+    .align-center-tablet {width : 150%;}
+  
+}
+
+@media (min-width: 600px) and (max-width: 600px) { 
+
+    .w-92-tablet {width : 92%}
+    .m-top-tablet {margin-top : 100px;}
+
 }
 
 @media (min-width: 992px) {  }
