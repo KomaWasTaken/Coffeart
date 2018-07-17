@@ -160,13 +160,12 @@ html{size: 62.5%;}
 /////////////////////////////////////  FONT STUFF  /////////////////////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
 
-body { font-size: 62.5%; }
-
 .fs-nav { font-size:4.4rem ;}
 .fs-14  { font-size:1.4rem ;}
 .fs-18  { font-size:1.8rem ;}
 .fs-30  { font-size:3rem ;}
 .fs-20  { font-size:2rem   ;}
+.fs-18  { font-size:1.8rem   ;}
 .fs-40  { font-size:4rem   ;}
 .fs-45  { font-size:4.5rem ;}
 .fs-55  { font-size:5.5rem ;}
@@ -268,11 +267,41 @@ body { font-size: 62.5%; }
 /////////////////////////////////////   MEDIA QUERIES   ///////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
 
-@media (min-width: 576px) { 
-    
+@media (max-width: 576px) { 
+    .d-none-mobile{display:none;}
+    .fs-55{font-size:3rem;}
+    .fs-45{font-size:2.5rem;}
+    .fs-30{font-size:2rem;}
+    .fs-20{font-size:1.5rem;}
+    .fs-18{font-size:1.3rem;}
+    .fs-nav{font-size:2.5rem;}
+    .w-100-mobile{width:100%;}
+    .text-center-mobile{text-align:center;}
+    .flex-column-mobile{flex-direction:column;}
+    .j-c-between-mobile{justify-content:space-between;}
+    .m-t-50-mobile{margin-top:50px;}
+    .m-t-25-mobile{margin-top:25px;}
+    .line_h_normal_mobile{line-height:normal;}
+    .h-100vh{height:80vh;}
+    .h-100vh-mobile{height:100vh;}
  }
 
-@media (min-width: 768px) {  }
+@media (min-width: 577px) and (max-width: 768px) { 
+    
+    .fs-55{font-size:4rem;}
+    .fs-45{font-size:2.75rem;}
+    .fs-30{font-size:2.3rem;}
+    .fs-20{font-size:1.8rem;}
+    .fs-18{font-size:1.5rem;}
+    .fs-nav{font-size:3rem;}
+    .w-100-tablet{width:100%;}
+    .h-100vh{height:50vh;}
+    .h-100vh-tablet{height:100vh;}
+    .j-c-center-tablet{justify-content:center;}
+    .j-c-around-tablet{justify-content:space-around;}
+    .line_h_normal_mobile{line-height:normal;}
+   
+}
 
 @media (min-width: 992px) {  }
 
