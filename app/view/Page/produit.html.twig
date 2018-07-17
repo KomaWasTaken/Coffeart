@@ -5,7 +5,17 @@
 {% endblock %}
 
 {% block content %}
+<form method="get" action="resultat" class="z_3 absolute">
+    <input type="text" name="research" id="" />
+    <input type="submit" value="Envoyer" name="submitform" />
+</form>
 
+
+{%   for result in results   %}
+    <p class="fs-14">{{   result.COF_COUNTRY_ORIGIN   }}</p>
+    <p class="fs-14">{{  result.COF_OWNER   }}</p>
+    <a href="produit/{{result.ID}}" class="fs-14">Découvrir</a>
+{%   endfor   %}
 <!-- Bloc produits-->
 <section class="w-100 h-100vh d-flex a-i-center j-c-around">
     <div class="d-flex j-c-center a-i-center h-50 w-50">

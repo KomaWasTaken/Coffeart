@@ -222,6 +222,7 @@ html{size: 62.5%;}
 .no_line {text-decoration: none;}
 .center  {margin: 0 auto;}
 .fixed   {position: fixed;}
+.z_3{z-index: 5;}
 .z_2 {z-index: 4;}
 .z_1 {z-index: 3;}
 .z_0 {z-index: 2;}

@@ -23,8 +23,8 @@ class Router {
         if($parts[0] == "tricafe") {//route vers fiche film
             $result["controller"] = "Page";
             $result["action"] = "tricafe";
-         }
-     }
+        }
+    }
      return $result;
     }  
 }
