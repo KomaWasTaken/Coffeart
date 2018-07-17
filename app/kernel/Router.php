@@ -13,17 +13,18 @@ class Router {
             $result['controller']   = 'Page';
             $result['action']       = 'display';
         } else {
-        $parts = explode("/", $request);
-        if($parts[0] == "produit" && count($parts) == 2) {//Route vers la page produit
-           $result["controller"] = "Page";
-           $result["action"] = "produit";
-           $result["params"]["id"] = $parts[1];            
+            $parts = explode("/", $request);
+            if($parts[0] == "produit" && count($parts) == 2) {//route vers fiche du produit
+                $result["controller"] = "Page";
+                $result["action"] = "produit";
+                $result["params"]["id"] = $parts[1];            
+            }
+            elseif($parts[0] == "resultat" && count($parts) == 2) {//route vers fiche de recherche produit
+                $result["controller"] = "Page";
+                $result["action"] = "resultat";
+                $result["params"]["id"] = $parts[1];          
+            }
         }
-        if($request === 'tricafe'){ // Route vers la page de tri du café
-            $result['controller']   = 'Page';
-            $result['action']       = 'tricafe';
-        }
-     }
      return $result;
     }  
 }
