@@ -7,7 +7,7 @@ mb_internal_encoding('UTF-8');
 date_default_timezone_set("Europe/Paris");
 header('Content-type: text/html; charset=utf-8');
 
-define('DB_DSN', 'mysql:dbname=project_big_data;host=localhost');
+define('DB_DSN', 'mysql:dbname=coffeart;host=localhost');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 
