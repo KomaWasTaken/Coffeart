@@ -94,19 +94,23 @@ class Home extends Model {
             
     }
 
-    public static function getResultat($recherche){
-        $db = Database::getInstance();
-            $recherche = $_GET['result'];
-            $sql = "SELECT * FROM coffeart
-                    WHERE cof_country_origin OR cof_owner OR cof_color OR cof_variety 
-                    LIKE  CONCAT('%', :result,'%')
-                    LIMIT 20
-                    ";
-        
-            $stmt = $db->prepare($sql); 
-            $stmt->setFetchMode(PDO::FETCH_ASSOC);
-            $stmt->bindValue(':result', $recherche, PDO::PARAM_STR); // Retranscrire du PHP en SQL
-            $stmt->execute();
-            return $stmt->fetchAll();            
+    public static function getResult($research){
+        if (isset($_GET['submitform'])){
+            if(!empty($_GET['research'])){
+                $research = $_GET['research'];
+                $db = Database::getInstance();
+
+                    $sql = "SELECT * FROM coffeart
+                            WHERE cof_country_origin OR cof_owner OR cof_color OR cof_variety
+                            LIKE CONCAT('%', :research, '%')
+                            LIMIT 20 ";
+                
+                    $stmt = $db->prepare($sql); 
+                    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                    $stmt->bindValue(':research', $research, PDO::PARAM_STR);
+                    $stmt->execute();
+                    return $stmt->fetchAll();  
+            }
+        }           
     }
 }

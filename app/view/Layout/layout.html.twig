@@ -15,12 +15,13 @@
         <title>{% block title %}Coffeart{% endblock %}</title>
     </head>
     <body class="d-flex flex-direction-column a-i-center z_0" >
+
+
+
+
         {% include 'Layout/nav.html.twig' %}
-        <form action="resultat" method="GET" class="z_2 absolute">
-            <input type="text" name="result" >
-            <button type="submit" name="submitform">ENVOYER</button>
-        </form>
-        <main class="bg-color-1 w-95 h-95">
+
+        <main class="bg-color-1 w-95 h-95 p-b-20">
             {% block content %}{% endblock %}
         </main>
 
