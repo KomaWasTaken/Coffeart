@@ -1,21 +1,17 @@
 {% extends 'Layout/layout.html.twig' %}
 
-
-
 {% block title %}
-    {{ parent() }} - Tri Café</title>
+    {{ parent() }} - Découvrir nos cafés</title>
 {% endblock %}
 
 {% block content %}
-<form method="get" class="z_3 absolute">
+
+<!-- Bloc Recherche -->
+<form method="get" class="z_3 absolute" action="resultat">
     <input type="text" name="research" id="" />
-    <input type="submit" value="Envoyer" name="submitform" />
+    <input type="submit" value="Envoyer" name="submitform"/>
 </form>
-{%   for result in results   %}
-    <p class="fs-14">{{   result.COF_COUNTRY_ORIGIN   }}</p>
-    <p class="fs-14">{{  result.COF_OWNER   }}</p>
-    <a href="produit/{{result.ID}}" class="fs-14">Découvrir</a>
-{%   endfor   %}
+
 <!-- Bloc découvrir cafés-->
 <section class="bg-img-1 w-100 h-100vh d-flex a-i-center j-c-around">
     <div class="d-flex j-c-center a-i-center h-50 w-50 w-100-tablet">
@@ -117,13 +113,7 @@
         </div>
     </div>
 
-    <!-- Bloc Logo -->
-    <div class="w-100 h-65 m-t-50 bg-img-2 ">
-        <div class="h-95 d-flex flex-direction-column j-c-evenly a-i-center">
-            <span class="span-borders-vertical120 d-none-mobile"></span>
-            <img class="w-17 h-auto" src="./assets/img/logo_coffeart.png">
-        </div>
-    </div>
+    
 
 </section>
 

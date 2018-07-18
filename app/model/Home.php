@@ -103,7 +103,8 @@ class Home extends Model {
                     $sql = "SELECT * FROM coffeart
                             WHERE cof_country_origin OR cof_owner OR cof_color OR cof_variety
                             LIKE CONCAT('%', :research, '%')
-                            LIMIT 20 ";
+                            ORDER BY RAND()
+                            LIMIT 8";
                 
                     $stmt = $db->prepare($sql); 
                     $stmt->setFetchMode(PDO::FETCH_ASSOC);
