@@ -7,21 +7,22 @@
 {% endblock %}
 
 {% block content %}
-<form method="get" class="z_3 absolute">
-    <input type="text" name="research" id="" />
-    <input type="submit" value="Envoyer" name="submitform" />
-</form>
+
 {%   for result in results   %}
     <p class="fs-14">{{   result.COF_COUNTRY_ORIGIN   }}</p>
     <p class="fs-14">{{  result.COF_OWNER   }}</p>
     <a href="produit/{{result.ID}}" class="fs-14">Découvrir</a>
 {%   endfor   %}
 <!-- Bloc découvrir cafés-->
-<section class="bg-img-1 w-100 h-100vh d-flex a-i-center j-c-around">
-    <div class="d-flex j-c-center a-i-center h-50 w-50 w-100-tablet">
+<section class="bg-img-1 w-100 h-100vh d-flex a-i-center j-c-around flex-column-mobile">
+    <div class="d-flex j-c-center a-i-center h-50 w-50 w-100-tablet w-init">
         <img class="w-75 h-auto d-none-mobile" src="./assets/img/coffee-leaf.png">
     </div>
-    <div class="d-flex flex-direction-column j-c-between h-50 w-35 w-100-mobile j-c-center-tablet">
+    <form method="get" class="z_3 absolute">
+            <input type="text" name="research" id="" />
+            <input type="submit" value="Rechercher" name="submitform" />
+        </form>
+    <div class="d-flex flex-direction-column j-c-between h-50 w-35 w-100-mobile j-c-center-tablet ">
        
             <a href="#" class="fs-30 color-3 text-decoration-none encodeSansCondensed">Découvrir nos cafés</a>
             <span class="span-borders p-l-10 d-none-mobile"></span>
@@ -35,12 +36,13 @@
             <img class="w-17 h-auto" src="./assets/img/badge_green.png">
             <img class="w-17 h-auto" src="./assets/img/badge_grey.png">
         </div>
-        
     </div>
+
+   
 </section>
 
 <!-- Bloc gammes-->
-<section class="h-180vh d-flex flex-column-mobile j-c-center j-c-between-mobile m-t-50-mobile">
+<section class="h-180vh h-ipad  d-flex flex-column-mobile j-c-center j-c-between-mobile m-t-50-mobile">
     <div class="d-flex j-c-evenly flex-direction-column w-100-mobile a-i-center">
         <div class="encodeSansCondensed h-35 d-flex flex-direction-column j-c-between a-i-center text-center">
             <p class="fs-30 color-3 text-decoration-none encodeSansCondensed">Découvrir nos gammes</p>
@@ -58,7 +60,7 @@
                     {% for coffee in sweetness %}
                     <a href="produit/{{coffee.ID}}" class="text-decoration-none">
                         <div class="d-flex flex-direction-column a-i-center w-100">
-                            <img class="w-45 h-auto" src="./assets/img/Bean-{{ coffee.COF_COLOR }}.png">
+                            <img class="w-45 w100 h-auto" src="./assets/img/Bean-{{ coffee.COF_COLOR }}.png">
                             <p class="p-t-20 fs-18 color-3">{{  coffee.COF_COUNTRY_ORIGIN }}</p>
                             <p class="p-t-5 fs-18 color-3">{{  coffee.COF_OWNER }}</p>
                         </div>
@@ -74,7 +76,7 @@
                     {% for coffee in acid %}
                     <a href="produit/{{coffee.ID}}" class="text-decoration-none">
                         <div class="d-flex flex-direction-column a-i-center w-100">
-                            <img class="w-45 h-auto" src="./assets/img/Bean-{{ coffee.COF_COLOR }}.png">
+                            <img class="w-45 w100 h-auto" src="./assets/img/Bean-{{ coffee.COF_COLOR }}.png">
                             <p class="p-t-20 fs-18 color-3">{{  coffee.COF_COUNTRY_ORIGIN }}</p>
                             <p class="p-t-5 fs-18 color-3">{{  coffee.COF_OWNER }}</p>
                         </div>
@@ -90,8 +92,8 @@
                     {% for coffee in balance %}
                     <a href="produit/{{coffee.ID}}" class="text-decoration-none">
                         <div class="d-flex flex-direction-column a-i-center w-100">
-                            <img class="w-45 h-auto" src="./assets/img/Bean-{{ coffee.COF_COLOR }}.png">
-                            <p class="p-t-20 fs-18 color-3">{{  coffee.COF_COUNTRY_ORIGIN }}</p>
+                            <img class="w-45 w100 h-auto" src="./assets/img/Bean-{{ coffee.COF_COLOR }}.png">
+                            <p class="p-t-20 fs-18 color-3 txt-center">{{  coffee.COF_COUNTRY_ORIGIN }}</p>
                             <p class="p-t-5 fs-18 color-3">{{  coffee.COF_OWNER }}</p>
                         </div>
                     </a>
@@ -109,7 +111,7 @@
 
     <!-- Bloc Citation -->
     <div class="w-85 d-flex flex-direction-column">
-        <div class="w-45">
+        <div class="w-45 w100">
             <p class="fs-55 fw-bold encodeSansCondensed color-4">LOREM IPSUM DOLOR SIT</p>
             <p class="fs-55 fw-bold encodeSansCondensed color-4">AMET LOREM IPSUM</p>
             <p class="fs-55 fw-bold encodeSansCondensed color-4">DOLOR SI AMET</p>
