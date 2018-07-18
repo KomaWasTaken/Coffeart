@@ -1,26 +1,16 @@
 {% extends 'Layout/layout.html.twig' %}
 
-
-
 {% block title %}
-    {{ parent() }} - Tri Café</title>
+    {{ parent() }} - Découvrir nos cafés</title>
 {% endblock %}
 
 {% block content %}
 
-{# Bloc recherche #}
-
-
-{# <form method="get" class="z_3 absolute">
+<!-- Bloc Recherche -->
+<form method="get" class="z_3 absolute" action="resultat">
     <input type="text" name="research" id="" />
-    <input type="submit" value="Envoyer" name="submitform" />
+    <input type="submit" value="Envoyer" name="submitform"/>
 </form>
-
-{%   for result in results   %}
-    <p class="fs-14">{{   result.COF_COUNTRY_ORIGIN   }}</p>
-    <p class="fs-14">{{  result.COF_OWNER   }}</p>
-    <a href="produit/{{result.ID}}" class="fs-14">Découvrir</a>
-{%   endfor   %} #}
 
 <!-- Bloc découvrir cafés-->
 <section class="bg-img-1 w-100 h-100vh d-flex a-i-center j-c-around">
@@ -111,52 +101,21 @@
 </section>
 
 <!-- Bloc Ending-->
-<section class="p-t-50 h-100vh d-flex flex-direction-column a-i-center">
+<section class="p-t-50 h-100vh d-flex flex-direction-column a-i-center h-100-mobile">
 
     <!-- Bloc Citation -->
     <div class="w-85 d-flex flex-direction-column">
-        <div class="w-45">
-            <p class="fs-55 fw-bold encodeSansCondensed color-4">LOREM IPSUM DOLOR SIT</p>
-            <p class="fs-55 fw-bold encodeSansCondensed color-4">AMET LOREM IPSUM</p>
-            <p class="fs-55 fw-bold encodeSansCondensed color-4">DOLOR SI AMET</p>
+        <div class="w-45 w-mobile-txt">
+            <p class="fs-55 fw-bold encodeSansCondensed color-4 fs-title-tricafe">LOREM IPSUM DOLOR SIT</p>
+            <p class="fs-55 fw-bold encodeSansCondensed color-4 fs-title-tricafe">AMET LOREM IPSUM</p>
+            <p class="fs-55 fw-bold encodeSansCondensed color-4 fs-title-tricafe">DOLOR SI AMET</p>
             <p class="fs-30 p-t-20 fs-italic text-right encodeSansCondensed color-3">Vincent Jacques</p>
         </div>
     </div>
 
-    <!-- Bloc Logo -->
-    <div class="w-100 h-65 m-t-50 bg-img-2 ">
-        <div class="h-95 d-flex flex-direction-column j-c-evenly a-i-center">
-            <span class="span-borders-vertical120 d-none-mobile"></span>
-            <img class="w-17 h-auto" src="./assets/img/logo_coffeart.png">
-        </div>
-    </div>
-
-
+    
 
 </section>
-
-
-<!-- <p>DOUX</p>
-    {% for coffee in sweetness %} {# BLOC TRI DOUX #}
-        {{  coffee.COF_SWEETNESS }}
-        {{  coffee.COF_COUNTRY_ORIGIN }}
-        {{  coffee.COF_OWNER }}
-        <a href="produit/{{coffee.ID}}">lien</a>
-    {% endfor %}
-<p>ACID</p>
-    {% for coffee in acid %} {# BLOC TRI ACID #}
-        {{  coffee.COF_ACIDITY }}
-        {{  coffee.COF_COUNTRY_ORIGIN }}
-        {{  coffee.COF_OWNER }}
-        <a href="produit/{{coffee.ID}}">lien</a>
-    {% endfor %}
-<p>BALANCE</p>
-    {% for coffee in balance %} {# BLOC TRI BALANCE #}
-        {{  coffee.COF_BALANCE }}
-        {{  coffee.COF_COUNTRY_ORIGIN }}
-        {{  coffee.COF_OWNER }}
-        <a href="produit/{{coffee.ID}}">lien</a>
-    {% endfor %} -->
 
 
 {% endblock %}

@@ -42,4 +42,18 @@ class PageController extends Controller {
         )); 
         
     }
+
+    public function resultat(){
+
+        $research = $_GET['research'];
+        $results = Home::getResult($research);
+
+        $template = $this->twig->loadTemplate('/Page/resultat.html.twig');
+        echo $template->render(array(
+            "results" => $results,
+            "research" => $research,
+        
+        )); 
+        
+    }
 }
