@@ -15,9 +15,12 @@ class PageController extends Controller {
 
             $id = $this->route["params"]["id"];
             $result = Home::getProduit($id);
+            $research = $_GET['research'];
+            $results = Home::getResult($research);
             $template = $this->twig->loadTemplate('/Page/produit.html.twig');
             echo $template->render(array(
-                "result" => $result,      
+                "result" => $result,   
+                "results" => $results,   
         ));
     }
 
@@ -26,16 +29,17 @@ class PageController extends Controller {
         $sweetness = Home::getBySweetness();
         $acid = Home::getByAcid();
         $balance = Home::getByBalance();
+        $research = $_GET['research'];
+        $results = Home::getResult($research);
 
         $template = $this->twig->loadTemplate('/Page/tricafe.html.twig');
         echo $template->render(array(
             'sweetness' => $sweetness,
             'acid' => $acid,
             'balance' => $balance,
+            "results" => $results,
         
         )); 
         
     }
-
-
 }

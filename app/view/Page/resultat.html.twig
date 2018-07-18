@@ -1,0 +1,67 @@
+{% extends 'Layout/layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Resultat</title>
+{% endblock %}
+
+{% block content %}
+
+<!-- Bloc produits-->
+{# 
+ <section class="w-100 h-100vh d-flex a-i-center j-c-around">
+    <div class="d-flex j-c-center a-i-center h-50 w-50">
+        <img class="w-75 h-auto" src="./assets/img/coffee-leaf.png">
+    </div>
+    <div class="d-flex flex-direction-column j-c-evenly h-50 w-35">
+        <div class="d-flex flex-direction-column">
+            <a href="#" class="fs-30 color-3 text-decoration-none p-b-15">Votre recherche</a>
+            <span class="span-borders"></span>
+        </div>
+        <div class="d-flex flex-direction-row">
+            <div class="w-35 p-t-20">
+                <p class="fs-20">LOREM IPSUM</p>
+                <p class="fs-20">LOREM IPSUM</p>
+                <p class="fs-20">LOREM IPSUM</p>
+            </div>
+            <div class="w-65 p-t-20">
+                <p class="fs-20">LOREM IPSUM DOLOR SIT AMET</p>
+                <p class="fs-20">LOREM IPSUM DOLOR SIT AMET</p>
+                <p class="fs-20">LOREM IPSUM DOLOR SIT AMET</p>
+            </div>
+        </div>
+        <div class="d-flex flex-direction-column p-t-20">
+            <a href="#" class="fs-30 color-3 text-decoration-none p-b-15">Notes</a>
+            <span class="span-borders"></span>
+        </div>
+        <div class="d-flex flex-direction-row">
+            <div class="w-35 p-t-20">
+                <p class="fs-20">LOREM IPSUM</p>
+                <p class="fs-20">LOREM IPSUM</p>
+                <p class="fs-20">LOREM IPSUM</p>
+            </div>
+            <div class="w-65 p-t-20">
+                <p class="fs-20">LOREM IPSUM</p>
+                <p class="fs-20">DOLOR</p>
+                <p class="fs-20">SIT AMET</p>
+            </div>
+        </div> 
+        <img class="w-17 h-auto  p-t-20" src="./assets/img/badge_green.png">
+    </div>
+
+</section> #}
+
+
+
+{% for coffee in result %} {# coffee =  Nom de la variable et resultat le nom de mon tableau #}
+       
+{{ coffee.COF_OWNER }}
+
+{{ coffee.COF_COLOR }}
+
+{{ coffee.COF_COUNTRY_ORIGIN }} 
+
+{% endfor %}
+
+
+
+{% endblock %}
