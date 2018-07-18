@@ -8,11 +8,23 @@
 
 {% block content %}
 
+<<<<<<< HEAD
+=======
+{# Bloc recherche #}
+
+
+<form method="get" class="z_3 absolute">
+    <input type="text" name="research" id="" />
+    <input type="submit" value="Envoyer" name="submitform" />
+</form>
+
+>>>>>>> 801e3a76359a0a9c8aa83fe41074502ff7808508
 {%   for result in results   %}
     <p class="fs-14">{{   result.COF_COUNTRY_ORIGIN   }}</p>
     <p class="fs-14">{{  result.COF_OWNER   }}</p>
     <a href="produit/{{result.ID}}" class="fs-14">Découvrir</a>
 {%   endfor   %}
+
 <!-- Bloc découvrir cafés-->
 <section class="bg-img-1 w-100 h-100vh d-flex a-i-center j-c-around flex-column-mobile">
     <div class="d-flex j-c-center a-i-center h-50 w-50 w-100-tablet w-init">

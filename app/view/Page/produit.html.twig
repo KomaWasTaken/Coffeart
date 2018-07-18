@@ -6,13 +6,6 @@
 
 {% block content %}
 
-
-
-{%   for result in results   %}
-    <p class="fs-14">{{   result.COF_COUNTRY_ORIGIN   }}</p>
-    <p class="fs-14">{{  result.COF_OWNER   }}</p>
-    <a href="produit/{{result.ID}}" class="fs-14">Découvrir</a>
-{%   endfor   %}
 <!-- Bloc produits-->
 <section class="w-100 h-100vh d-flex a-i-center j-c-around h-100mobile flex-column-mobile h-100vh">
     <div class="d-flex j-c-center a-i-center h-50 w-50 h-mobile-10 m-top-mobile">
@@ -61,19 +54,8 @@
             <p class="fs-30 color-3 text-decoration-none p-b-15 text-center-mobile m-mobile-10 m-t-50">Notes</p>
             <span class="span-borders d-none-mobile"></span>
         </div>
-        <div class="d-flex flex-direction-row txt-center w-100">
-            <div class="w-45 w100 w-none p-t-20 m-mobile-10 m-t-25 w-full">
-                <p class="fs-20">AROME (/10)</p>
-                <p class="fs-20">SAVEUR (/10)</p>
-                <p class="fs-20">ACIDITE (/10)</p>
-                <p class="fs-20">DOUCEUR (/10)</p>
-            </div>
-            <div class="w-55 p-t-20 m-t-25">
-                <p class="fs-20">{{ result.COF_AROMA}}</p>
-                <p class="fs-20">{{ result.COF_FLAVOR}}</p>
-                <p class="fs-20">{{ result.COF_ACIDITY}}</p>
-                <p class="fs-20">{{ result.COF_SWEETNESS}}</p>
-            </div>
+        <div class="d-flex flex-direction-row txt-center w-75">
+            <canvas id="myChart" class=" w-200px h-200px"></canvas>
         </div> 
 
     </div>
@@ -85,6 +67,59 @@
 
 </section>
 
-{# <p>Ceci est la page produit: {{ result.ID }}</p> #}
+
+<script>
+    
+var ctx = document.getElementById("myChart").getContext("2d");
+var acidity = {{ result.COF_ACIDITY }};
+var flavor = {{ result.COF_FLAVOR }} ;
+var sweetness = {{ result.COF_SWEETNESS}};
+var aroma = {{ result.COF_AROMA}};
+
+var myChart = new Chart(ctx, {
+type: 'horizontalBar',
+      data: {
+          labels: ["arome", "saveur", "acidité", "douceur"],
+          datasets: [{
+              label: '',
+              data: [aroma, flavor, acidity, sweetness],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)'
+
+              ],
+              borderColor: [
+                  'rgba(255,99,132,1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)'
+
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+            legend:{
+                display:false
+            },
+
+          scales: {
+              xAxes: [{
+                ticks: {
+            		min: 0
+                }
+            }],
+              yAxes: [{
+                  ticks: {
+                      beginAtZero:true
+                  }
+              }]
+          }
+      }
+  });
+</script>
+
 
 {% endblock %}
