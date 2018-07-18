@@ -310,17 +310,21 @@ html{size: 62.5%;}
     .fs-30{font-size:2rem;}
     .fs-20{font-size:1.5rem;}
     .fs-18{font-size:1.3rem;}
+    .fs-title-tricafe{font-size:2.5rem;}
+    .fs-desc-tricafe{font-size:1.8rem;}
     .fs-nav{font-size:2.5rem;}
 
     /* WIDTH & HEIGHT */
     .w-100-mobile{width:100%;}
     .w-mobile-txt {width : 90%}
     .logo-mobile {width: 100px;}
+    .h-100-mobile{height:100%;}
     .h-100vh{height:80vh;}
     .h-100mobile{height: 100vh;}
 
     /* PADDING & MARGIN */
     .m-t-50-mobile{margin-top:50px;}
+    .m-t-30-mobile{margin-top:30px;}
     .m-t-25-mobile{margin-top:25px;}
     .m-t-10-mobile{margin-top:10px;}
     .m-top-mobile {margin-top : 10px;}
@@ -328,6 +332,7 @@ html{size: 62.5%;}
     .p-r-25-mobile{padding-right:25px;}
     .p-t-b-20-mobile{padding-top:20px;
     padding-bottom:20px;}
+    .p-t-5-mobile{padding-top:5px;}
     
     /* FLEX */
     .text-center-mobile{text-align:center;}
