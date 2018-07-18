@@ -67,12 +67,14 @@ html{size: 62.5%;}
 .p-t-10{padding-top:10px;}
 .p-t-15{padding-top:15px;}
 .p-t-20{padding-top:20px;}
+.p-t-30{padding-top:30px;}
 .p-t-50{padding-top:50px;}
 
 .p-b-5{padding-bottom:5px;}
 .p-b-10{padding-bottom:10px;}
 .p-b-15{padding-bottom:15px;}
 .p-b-20{padding-bottom:20px;}
+.p-b-30{padding-bottom:30px;}
 .p-b-50{padding-bottom:50px;}
 
 .m-5{margin:5px;}
@@ -314,17 +316,21 @@ html{size: 62.5%;}
     .fs-30{font-size:2rem;}
     .fs-20{font-size:1.5rem;}
     .fs-18{font-size:1.3rem;}
+    .fs-title-tricafe{font-size:2.5rem;}
+    .fs-desc-tricafe{font-size:1.8rem;}
     .fs-nav{font-size:2.5rem;}
 
     /* WIDTH & HEIGHT */
     .w-100-mobile{width:100%;}
     .w-mobile-txt {width : 90%}
     .logo-mobile {width: 100px;}
+        
     .h-100vh{height:80vh;}
     .h-100mobile{height: 100vh;}
-
+    .h-100-mobile{height:100%;}
     /* PADDING & MARGIN */
     .m-t-50-mobile{margin-top:50px;}
+    .m-t-30-mobile{margin-top:30px;}
     .m-t-25-mobile{margin-top:25px;}
     .p-r-25-mobile{padding-right: 25px;}
     .line_h_normal_mobile{line-height:normal;}
@@ -336,6 +342,7 @@ html{size: 62.5%;}
     .p-r-25-mobile{padding-right:25px;}
     .p-t-b-20-mobile{padding-top:20px;
     padding-bottom:20px;}
+    .p-t-5-mobile{padding-top:5px;}
     
     /* FLEX */
     .text-center-mobile{text-align:center;}
