@@ -7,62 +7,57 @@
 {% block content %}
 
 <!-- Bloc produits-->
-<section class="w-100 h-100vh d-flex a-i-center j-c-around">
-    <div class="d-flex j-c-center a-i-center h-50 w-50">
-        <img class="w-75 h-auto" src="./assets/img/coffee-leaf.png">
-    </div>
-    <div class="d-flex flex-direction-column j-c-evenly h-50 w-35">
+<section class="w-100 h-8vh h-scroll d-flex a-i-center j-c-around flex-column-mobile j-c-between-mobile m-t-50">
+    <div class="d-flex j-c-center a-i-center h-50 w-50 w-100-mobile j-c-around-tablet m-t-25">
+        <img class="w-75 h-auto m-t-50" src="./assets/img/coffee-leaf.png">
+    </div> 
+    <div class="d-flex flex-direction-column j-c-evenly h-50 w-35 w-100-mobile align-center-tablet w-full">
         <div class="d-flex flex-direction-column">
-            <a href="#" class="fs-30 color-3 text-decoration-none p-b-15">Découvrir nos gammes</a>
-            <span class="span-borders"></span>
+            <span class="span-borders d-none-mobile"></span>
         </div>
-        <div class="d-flex flex-direction-row">
-            <div class="w-35 p-t-20">
-                <p class="fs-20">LOREM IPSUM</p>
-                <p class="fs-20">LOREM IPSUM</p>
-                <p class="fs-20">LOREM IPSUM</p>
+        <div class="d-flex flex-direction-row txt-center w-75 ">
+            <div class="w-35 w100 w-none p-t-20 m-t-25 w-full">
+                <p class="fs-20">PRODUCTEUR</p>
+
             </div>
             <div class="w-65 p-t-20">
-                <p class="fs-20">LOREM IPSUM DOLOR SIT AMET</p>
-                <p class="fs-20">LOREM IPSUM DOLOR SIT AMET</p>
-                <p class="fs-20">LOREM IPSUM DOLOR SIT AMET</p>
+                <p class="fs-20">{{ result.COF_OWNER}}</p>
+                <p class="fs-20">{{ result.COF_COUNTRY_ORIGIN}}</p>
+                <p class="fs-20">{{ result.COF_REGION}}</p>
+                <p class="fs-20">{{ result.COF_ALTITUDE}}</p>
             </div>
         </div>
         <div class="d-flex flex-direction-column p-t-20">
-            <a href="#" class="fs-30 color-3 text-decoration-none p-b-15">Notes</a>
-            <span class="span-borders"></span>
+            <a href="#" class="fs-30 color-3 text-decoration-none p-b-15 text-center-mobile m-t-50">Notes</a>
+            <span class="span-borders d-none-mobile"></span>
         </div>
-        <div class="d-flex flex-direction-row">
-            <div class="w-35 p-t-20">
-                <p class="fs-20">LOREM IPSUM</p>
-                <p class="fs-20">LOREM IPSUM</p>
-                <p class="fs-20">LOREM IPSUM</p>
+        <div class="d-flex flex-direction-row txt-center w-75">
+            <div class="w-65 w100 w-none p-t-20 m-t-25 w-full">
+                <p class="fs-20">AROME (/10)</p>
+                <p class="fs-20">SAVEUR (/10)</p>
+                <p class="fs-20">ACIDITE (/10)</p>
+                <p class="fs-20">DOUCEUR (/10)</p>
             </div>
-            <div class="w-65 p-t-20">
-                <p class="fs-20">LOREM IPSUM</p>
-                <p class="fs-20">DOLOR</p>
-                <p class="fs-20">SIT AMET</p>
+            <div class="w-35 p-t-20 m-t-25">
+                <p class="fs-20">{{ result.COF_AROMA}}</p>
+                <p class="fs-20">{{ result.COF_FLAVOR}}</p>
+                <p class="fs-20">{{ result.COF_ACIDITY}}</p>
+                <p class="fs-20">{{ result.COF_SWEETNESS}}</p>
             </div>
         </div> 
-        <img class="w-17 h-auto  p-t-20" src="./assets/img/badge_green.png">
+        <img class="w-17 h-auto p-t-20 m-t-25" src="{{ result.COF_COLOR }}">
     </div>
+
 
 </section>
 
 <p>Ceci est la page produit: {{ result.ID}}</p>
-{{ result.COF_OWNER}}
 
-{{ result.COF_COLOR}}
 
-{{ result.COF_COUNTRY_ORIGIN}}
-{{ result.COF_REGION}}
 
-{{ result.COF_AROMA}}
-{{ result.COF_FLAVOR}}
-{{ result.COF_ACIDITY}}
-{{ result.COF_SWEETNESS}}
 
-{{ result.COF_ALTITUDE}}
+
+
 
 
 {% endblock %}

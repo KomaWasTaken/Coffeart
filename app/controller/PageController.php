@@ -4,16 +4,8 @@ class PageController extends Controller {
 
     public function display(){
 
-        $sweetness = Home::getBySweetness();
-        $acid = Home::getByAcid();
-        $balance = Home::getByBalance();
-
-
         $template = $this->twig->loadTemplate('/Page/home.html.twig');
         echo $template->render(array(
-            'sweetness' => $sweetness,
-            'acid' => $acid,
-            'balance' => $balance,
         
         )); 
         
@@ -28,6 +20,17 @@ class PageController extends Controller {
                 "result" => $result,      
         ));
     }
+
+    public function resultat(){
+        $id = $this->route["params"]["id"];
+        $recherche = Home::getResultat($id);
+        $template = $this->twig->loadTemplate('/Page/resultat.html.twig');        
+        echo $template->render(array(
+            "result" => $recherche,      
+        ));
+        echo ('Oui bonjour');        
+    }
+
 
 
 }
