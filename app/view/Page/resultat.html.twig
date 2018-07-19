@@ -7,15 +7,27 @@
 {% block content %}
 
 <!-- Bloc résultats-->
-<section class="w-100 h-100vh d-flex flex-direction-column a-i-center j-c-center">
-    <div class="h-65 d-flex flex-direction-column a-i-center j-c-evenly">
+<section class="w-100 h-100-mobile h-100vh d-flex flex-direction-column a-i-center j-c-center m-t-70-mobile">
+    <div class="h-65 h-initial m-t-70-mobile d-flex flex-direction-column a-i-center j-c-evenly">
         <p class="fs-30 color-4 encodeSansCondensed">Résultat(s) de votre recherche pour "{{ research }}":</p>
-        <div class="d-flex flex-direction-column a-i-center j-c-between h-75 w-50">
+        <div class="d-initial-mobile d-flex flex-direction-column flex-row-mobile flex-wrap-mobile a-i-center j-c-between h-75 w-50">
+            <div class="w-100 h-100 d-flex a-i-center j-c-evenly m-t-50 d-none-mobile d-none-tablet">
+                <div class="text-center">
+                    <p class="fw-bold fs-20 color-3 encodeSansCondensed">Pays</p>
+                </div>
+                <div class="text-center">
+                    <p class="fw-bold fs-20 color-3 encodeSansCondensed">Producteur</p>
+                </div>
+            </div>
             {% for result in results %}
-                <div class="d-flex a-i-center j-c-between h-100 w-100 p-t-50">
-                    <img class="w-10 h-auto" src="./assets/img/Bean-{{ result.COF_COLOR }}.png">
-                    <p class="fs-20 encodeSansCondensed color-3">{{ result.COF_COUNTRY_ORIGIN }}</p>
-                    <p class="fs-20 encodeSansCondensed color-3">{{ result.COF_OWNER }}</p>
+                <div class="d-flex flex-column-mobile a-i-center j-c-between h-100 w-100 p-t-50">
+                    <img class="w-10 w-50-mobile h-auto" src="./assets/img/Bean-{{ result.COF_COLOR }}.png">
+                    <div class="text-center w-100">
+                        <p class="fs-20 encodeSansCondensed color-3">{{ result.COF_COUNTRY_ORIGIN }}</p>
+                    </div>
+                    <div class="text-center w-100">
+                        <p class="fs-20 encodeSansCondensed color-3">{{ result.COF_OWNER }}</p>
+                    </div>
                     <a href="produit/{{result.ID}}" class="fs-20 encodeSansCondensed color-5">Découvrir</a>
                 </div>
             {% endfor %}
