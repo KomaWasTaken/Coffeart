@@ -35,17 +35,17 @@ type: 'horizontalBar',
               label: '',
               data: [aroma, flavor, acidity, sweetness],
               backgroundColor: [
-                '#53312B',
-                '#53312B',
-                '#53312B',
-                '#53312B'
+                'rgba(76, 51, 25, 0.8)',
+                'rgba(25, 76, 25, 0.8)',
+                'rgba(76, 76, 25, 0.8)',
+                'rgba(206, 132, 59, 0.8)'
 
-              ],
-              borderColor: [
-                '#394C23',
-                '#394C23',
-                '#394C23',
-                '#394C23'
+            ],
+            borderColor: [
+                'rgba(76, 51, 25,1)',
+                'rgba(25, 76, 25, 1)',
+                'rgba(76, 76, 25, 1)',
+                'rgba(206, 132, 59, 1)'
 
               ],
               borderWidth: 1
