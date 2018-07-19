@@ -106,6 +106,7 @@ html{size: 62.5%;}
 
 .a-i-center {
     align-items: center; }
+   
     
 .j-c-center {
     justify-content: center; }
@@ -174,6 +175,7 @@ html{size: 62.5%;}
 .fs-40  { font-size:4rem ;}
 .fs-45  { font-size:4.5rem ;}
 .fs-55  { font-size:5.5rem ;}
+.fs-80  {font-size: 8rem;}
 
 .fst-italic { font-style: italic; }
 
@@ -320,8 +322,10 @@ html{size: 62.5%;}
 
     
     /* FONT SIZE */
+    .fs-80{font-size:4rem;}
     .fs-55{font-size:3rem;}
     .fs-45{font-size:2.5rem;}
+    .fs-40{font-size:2.25rem;}
     .fs-30{font-size:2rem;}
     .fs-20{font-size:1.5rem;}
     .fs-18{font-size:1.3rem;}
@@ -335,10 +339,13 @@ html{size: 62.5%;}
     .w-20-mobile{width:20%;}
     .w-mobile-txt {width : 90%}
     .logo-mobile {width: 100px;}
-        
+    .w-90-mobile{width:90%;}
+    .w-50-mobile{width:50%;}    
+
     .h-100vh{height:80vh;}
     .h-100mobile{height: 100vh;}
     .h-100-mobile{height:100%;}
+
     /* PADDING & MARGIN */
     .m-t-50-mobile{margin-top:50px;}
     .m-t-30-mobile{margin-top:30px;}
@@ -349,7 +356,6 @@ html{size: 62.5%;}
     .p-t-30-mobile{padding-top: 10px;}
     .p-b-30-mobile{padding-bottom: 10px;}
     .line_h_normal_mobile{line-height:normal;}
-    .h-100vh{height:80vh;}
     .logo-mobile {width: 100px;}
     .m-t-10-mobile{margin-top:10px;}
     .m-top-mobile {margin-top : 10px;}
