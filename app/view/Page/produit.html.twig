@@ -7,24 +7,24 @@
 {% block content %}
 
 <!-- Bloc produits-->
-<section class="w-100 h-100vh d-flex a-i-center j-c-around">
-    <div class="d-flex j-c-center a-i-center h-50 w-50">
-        <img class="w-75 h-auto" src="./assets/img/Bean-{{ result.COF_COLOR }}.png">
+<section class="w-100 d-flex a-i-center j-c-around h-100mobile flex-column-mobile h-100vh h-100vh-tablet">
+    <div class="d-flex j-c-center a-i-center h-50 w-50 h-mobile-10 m-top-mobile">
+        <img class="w-75 h-auto d-none-mobile" src="./assets/img/Bean-{{ result.COF_COLOR }}.png">
     </div>
-    <div class="d-flex flex-direction-column j-c-evenly h-50 w-35">
+    <div class="d-flex flex-direction-column j-c-evenly h-50 w-0 w-35 w-full">
         <div class="d-flex flex-direction-column">
-            <p class="fs-30 color-3 text-decoration-none p-b-15 text-center-mobile m-t-50">Description</p>
+            <p class="fs-30 color-3 text-decoration-none p-b-15 text-center-mobile m-mobile-10 m-t-50 d-none-mobile">Description</p>
             <span class="span-borders d-none-mobile"></span>
         </div>
-        <div class="d-flex flex-direction-row txt-center w-100 ">
-            <div class="w-35 w100 w-none p-t-20 m-t-25 w-full">
+        <div class="d-flex flex-direction-row txt-center w-100 m-t-mobile ">
+            <div class="w-45 w100 w-none p-t-20 m-mobile-10 m-t-25 w-full">
                 <p class="fs-20">PRODUCTEUR</p>
                 <p class="fs-20">PAYS</p>
                 <p class="fs-20">REGION</p>
                 <p class="fs-20">ALTITUDE</p>
 
             </div>
-            <div class="w-65 p-t-20">
+            <div class="w-55 p-t-20">
                 {% if result.COF_OWNER != '' %}
                 <p class="fs-20">{{ result.COF_OWNER }}</p>
                 {% else %} 
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="d-flex flex-direction-column p-t-20">
-            <p class="fs-30 color-3 text-decoration-none p-b-15 text-center-mobile m-t-50">Notes</p>
+            <p class="fs-30 color-3 text-decoration-none p-b-15 text-center-mobile m-mobile-10 m-t-50">Notes</p>
             <span class="span-borders d-none-mobile"></span>
         </div>
         <div class="d-flex flex-direction-row txt-center w-75">
@@ -59,6 +59,12 @@
         </div> 
 
     </div>
+
+    <form method="get" action="resultat" class="z_3 absolute b-40 position-mobile m-t-50 text-center">
+        <input type="text" name="research" id="" />
+        <input type="submit" value="Rechercher" name="submitform" />
+    </form>
+    
     <input type="hidden" name="" id="acidity" value="{{ result.COF_ACIDITY }}">
     <input type="hidden" name="" id="flavor" value="{{ result.COF_FLAVOR }}">
     <input type="hidden" name="" id="sweetness" value="{{ result.COF_SWEETNESS}}">
@@ -72,9 +78,6 @@
 
 
 </section>
-
-<p>Ceci est la page produit: {{ result.ID}}</p>
-
 
 
 
