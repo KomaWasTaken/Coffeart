@@ -16,18 +16,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>{% block title %}Coffeart{% endblock %}</title>
     </head>
+    {% include 'Layout/nav.html.twig' %}
     <body class="d-flex flex-direction-column a-i-center z_0" >
 
 
 
 
-        {% include 'Layout/nav.html.twig' %}
+        
 
-        <main class="bg-color-1 w-95 h-95 p-b-20">
+        <main class="bg-color-1 w-95 h-95 p-b-20 m-t-50">
             {% block content %}{% endblock %}
         </main>
 
-        {% include 'Layout/footer.html.twig' %}
+       
         
     </body>
+    {% include 'Layout/footer.html.twig' %}
 </html>

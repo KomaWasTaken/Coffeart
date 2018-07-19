@@ -95,21 +95,34 @@ class Home extends Model {
     }
 
     public static function getResult($research){
+        $message ='';
         if (isset($_GET['submitform'])){
-            if(!empty($_GET['research'])){
-                $research = $_GET['research'];
+            if(!empty($_GET['research']) && $_GET['research'] != ' ') {
+                $research = htmlentities($_GET['research']);
                 $db = Database::getInstance();
 
-                    $sql = "SELECT * FROM coffeart
-                            WHERE cof_country_origin OR cof_owner OR cof_color OR cof_variety
-                            LIKE CONCAT('%', :research, '%')
-                            LIMIT 20 ";
-                
-                    $stmt = $db->prepare($sql); 
-                    $stmt->setFetchMode(PDO::FETCH_ASSOC);
-                    $stmt->bindValue(':research', $research, PDO::PARAM_STR);
-                    $stmt->execute();
-                    return $stmt->fetchAll();  
+                $sql = "SELECT * FROM coffeart
+                        WHERE cof_country_origin
+                        LIKE CONCAT('%', :research, '%') 
+                        OR cof_color
+                        LIKE CONCAT('%', :research, '%')
+                        OR cof_variety
+                        LIKE CONCAT('%', :research, '%')
+                        OR cof_owner
+                        LIKE CONCAT('%', :research, '%')
+                        
+                        
+                        ORDER BY RAND()
+                        LIMIT 8";
+            
+                $stmt = $db->prepare($sql); 
+                $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                $stmt->bindValue(':research', $research, PDO::PARAM_STR);
+                $stmt->execute();
+                return $stmt->fetchAll();  
+            }
+            else{
+                echo('');
             }
         }           
     }
