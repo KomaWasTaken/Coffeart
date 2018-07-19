@@ -6,14 +6,10 @@
 
 {% block content %}
 
-<!-- Bloc Recherche -->
-<form method="get" class="z_3 absolute" action="resultat">
-    <input type="text" name="research" id="" />
-    <input type="submit" value="Envoyer" name="submitform"/>
-</form>
+
 
 <!-- Bloc découvrir cafés-->
-<section class="bg-img-1 w-100 h-100vh d-flex a-i-center j-c-around">
+<section class="bg-img-1 w-100 h-100vh d-flex a-i-center j-c-around flex-wrap">
     <div class="d-flex j-c-center a-i-center h-50 w-50 w-100-tablet d-none-mobile">
         <img class="w-75 h-auto" src="./assets/img/coffee-leaf.png">
     </div>
@@ -31,8 +27,13 @@
             <img class="w-17 h-auto" src="./assets/img/badge_green.png">
             <img class="w-17 h-auto " src="./assets/img/badge_grey.png">
         </div>
-        
+       
     </div>
+    <form method="get" class="" action="resultat">
+        <input type="text" name="research" id="" />
+        <input type="submit" value="Rechercher" name="submitform"/>
+    </form> 
+   <!-- Bloc Recherche -->
 </section>
 
 <!-- Bloc gammes-->
