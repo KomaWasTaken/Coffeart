@@ -7,11 +7,11 @@
 {% block content %}
 
 <!-- Bloc produits-->
-<section class="w-100 d-flex a-i-center j-c-around h-100mobile flex-column-mobile h-100vh h-100vh-tablet">
+<section class="w-100 d-flex a-i-center j-c-around h-100mobile flex-column-mobile h-100vh h-100vh-tablet flex-wrap flex-nowrap-mobile">
     <div class="d-flex j-c-center a-i-center h-50 w-50 h-mobile-10 m-top-mobile">
         <img class="w-75 h-auto d-none-mobile" src="./assets/img/Bean-{{ result.COF_COLOR }}.png">
     </div>
-    <div class="d-flex flex-direction-column j-c-evenly w-0 w-35 w-100-mobile h-75">
+    <div class="d-flex flex-direction-column j-c-evenly w-0 w-35 w-100-mobile h-65">
         <div class="d-flex flex-direction-column">
             <p class="fs-30 color-3 text-decoration-none p-b-15 text-center-mobile m-mobile-10 m-t-50 d-none-mobile">Description</p>
             <span class="span-borders d-none-mobile"></span>
@@ -60,10 +60,24 @@
 
     </div>
 
-    <form method="get" action="resultat" class="z_3 absolute b-40 position-mobile m-t-50 text-center">
-        <input type="text" name="research" id="" />
-        <input type="submit" value="Rechercher" name="submitform" />
-    </form>
+    <div class=" d-flex flex-direction-column a-i-center m-t-50-mobile">
+            <p class="fs-15 color-4 encodeSansCondensed fw-bold text-center-mobile">Veuillez entrer un mot-clé concernant un pays, un producteur, une couleur ou une variété</p>
+            <form method="get" class="p-t-15 " action="resultat">
+                {# <input type="text" name="research" id="" class="border-none border-bottom-1 outline-none bg-color-none color-2 encodeSansCondensed"/>
+                <input type="submit" value="Rechercher" name="submitform" class="border-none border-bottom-1  color-2 encodeSansCondensed fw-bold bg-color-menu"/> #}
+                <div class=" d-flex">
+                    <span class="input input--kuro w-25">
+                        <input class="input__field input__field--kuro w-25" type="text" id="input-7" name="research"/>
+                        <label class="input__label input__label--kuro w-25" for="input-7">
+                            <span class="input__label-content input__label-content--kuro">Votre recherche</span>
+                        </label>
+                    </span>
+                    <button type="submit" class="btn btn-default bg-color-none outline-none border-none " name="submitform">
+                    <i class="fa-2x fas fa-search"></i>
+                    </button>
+                </div>
+            </form> 
+        </div>
     
     <input type="hidden" name="" id="acidity" value="{{ result.COF_ACIDITY }}">
     <input type="hidden" name="" id="flavor" value="{{ result.COF_FLAVOR }}">
