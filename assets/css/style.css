@@ -244,6 +244,11 @@ html{size: 62.5%;}
     left: 50%;
     transform: translate(-50%);
   }
+
+#navigation a:hover{
+    color: #c39e9a;
+}
+
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  BORDERS & STUFF  //////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
@@ -341,7 +346,7 @@ html{size: 62.5%;}
     .w-90-mobile{width:90%;}
     .w-50-mobile{width:50%;}    
 
-    .h-100vh{height:80vh;}
+    .h-100vh{height:100vh;}
     .h-100vh-mobile{height: 100vh;}
     .h-100-mobile{height:100%;}
 
@@ -446,7 +451,7 @@ html{size: 62.5%;}
     .m-t-50-mobile {margin-top : 35px;}
     .p-t-30-mobile{padding-top: 10px;}
     .p-b-30-mobile{padding-bottom: 10px;}
-    .h-100vh{height:80vh;}
+    .h-100vh{height:100vh;}
     .position-mobile{position: initial;}
     .w-init {width: initial;}
     .h-100-mobile{height:100%;}

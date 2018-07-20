@@ -40,8 +40,8 @@
 <section class="h-180vh d-flex flex-column-mobile j-c-center j-c-between-mobile m-t-50-mobile h-100-mobile">
     <div class="d-flex j-c-evenly flex-direction-column w-100-mobile a-i-center">
         <div class="encodeSansCondensed h-35 d-flex flex-direction-column j-c-between a-i-center text-center">
-            <p class="fs-30 color-3 text-decoration-none encodeSansCondensed">Découvrir les gammes</p>
-            <span class="span-borders-vertical80 d-none-mobile color-4"></span>
+            <p data-aos="fade-down" data-aos-duration="2000" class="fs-30 color-3 text-decoration-none encodeSansCondensed">Découvrir les gammes</p>
+            <span data-aos="fade-down" data-aos-duration="2000" class="span-borders-vertical80 d-none-mobile color-4"></span>
             <p class="fs-55 color-4 m-t-10-mobile fs-title-tricafe">DUO REGES: CONSTRUCTIO INTERRETE</p>
             <p class="fs-55 color-4 fs-title-tricafe">NIHILO MAGIS. ROGES ENI</p>
             <p class="fs-55 color-4 fs-title-tricafe">DOLOR ERGO, ID EST</p>
@@ -50,7 +50,7 @@
 
             <div class="p-t-50 encodeSansCondensed color-3">
                 <!-- Bloc Tri Doux -->
-                <p class="fs-20 fw-bold color-3 fs-title-tricafe text-center-mobile">Doux</p>
+                <p data-aos="fade-right" data-aos-duration="1000" class="fs-20 fw-bold color-3 fs-title-tricafe text-center-mobile">Doux</p>
                 <div class="d-flex flex-direction-row p-t-20 flex-column-mobile">
                     {% for coffee in sweetness %}
                     <a href="produit/{{coffee.ID}}" class="text-decoration-none m-t-30-mobile">
@@ -66,7 +66,7 @@
 
             <div class="p-t-50 encodeSansCondensed color-3">
                 <!-- Bloc Tri Corsé -->
-                <p class="fs-20 fw-bold color-3 fs-title-tricafe text-center-mobile">Corsé</p>
+                <p data-aos="fade-right" data-aos-duration="1000" class="fs-20 fw-bold color-3 fs-title-tricafe text-center-mobile">Corsé</p>
                 <div class="d-flex flex-direction-row p-t-20 flex-column-mobile">
                     {% for coffee in acid %}
                     <a href="produit/{{coffee.ID}}" class="text-decoration-none m-t-30-mobile">
@@ -82,7 +82,7 @@
 
             <div class="p-t-50 encodeSansCondensed">
                 <!-- Bloc Tri Equilibré -->
-                <p class="fs-20 fw-bold color-3 fs-title-tricafe text-center-mobile">Equilibré</p>
+                <p data-aos="fade-right" data-aos-duration="1000" class="fs-20 fw-bold color-3 fs-title-tricafe text-center-mobile">Equilibré</p>
                 <div class="d-flex flex-direction-row p-t-20 flex-column-mobile">
                     {% for coffee in balance %}
                     <a href="produit/{{coffee.ID}}" class="text-decoration-none m-t-30-mobile">
@@ -107,10 +107,10 @@
     <!-- Bloc Citation -->
     <div class="w-85 d-flex flex-direction-column">
         <div class="w-45 w-mobile-txt">
-            <p class="fs-55 fw-bold encodeSansCondensed color-4 fs-title-tricafe">LOREM IPSUM DOLOR SIT</p>
-            <p class="fs-55 fw-bold encodeSansCondensed color-4 fs-title-tricafe">AMET LOREM IPSUM</p>
-            <p class="fs-55 fw-bold encodeSansCondensed color-4 fs-title-tricafe">DOLOR SI AMET</p>
-            <p class="fs-30 p-t-20 fs-italic text-right encodeSansCondensed color-3">Vincent Jacques</p>
+            <p class="fs-55 encodeSansCondensed color-4 fs-title-tricafe">“LOREM IPSUM DOLOR SIT</p>
+            <p class="fs-55 encodeSansCondensed color-4 fs-title-tricafe">AMET LOREM IPSUM</p>
+            <p class="fs-55 encodeSansCondensed color-4 fs-title-tricafe">DOLOR SI AMET”</p>
+            <p class="fs-30 p-t-20 fw-bold text-right encodeSansCondensed color-3">Vincent Jacques</p>
         </div>
     </div>
 
