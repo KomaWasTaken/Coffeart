@@ -7,13 +7,15 @@
 {% block content %}
 
 <!-- Bloc produits-->
+<a href="tricafe" class="z_3 no-line absolute text-decoration-none fs-40 color-5 encodeSansCondensed m-home m-t-20 p-r-50 p-r-25-mobile m-t-25-mobile"><i class="fas fa-chevron-circle-left"></i></a>
 <section class="w-100 d-flex a-i-center j-c-around h-100mobile flex-column-mobile h-100vh h-100vh-tablet flex-wrap flex-nowrap-mobile">
+    
     <div class="d-flex j-c-center a-i-center h-50 w-50 h-mobile-10 m-top-mobile">
         <img class="w-75 h-auto d-none-mobile" src="./assets/img/Bean-{{ result.COF_COLOR }}.png">
     </div>
     <div class="d-flex flex-direction-column j-c-evenly w-0 w-35 w-100-mobile h-65">
         <div class="d-flex flex-direction-column">
-            <p class="fs-30 color-3 text-decoration-none p-b-15 text-center-mobile m-mobile-10 m-t-50 d-none-mobile">Description</p>
+            <p class="fs-30 color-3 text-decoration-none p-b-15 text-center-mobile m-mobile-10 m-t-50 d-none-mobile encodeSansCondensed">Description</p>
             <span class="span-borders d-none-mobile"></span>
         </div>
         <div class="d-flex flex-direction-row txt-center w-100 m-t-mobile w-90-mobile encodeSansCondensed">
@@ -54,7 +56,7 @@
             <p class="fs-30 color-3 text-decoration-none p-b-15 text-center-mobile m-mobile-10 m-t-50 encodeSansCondensed">Notes</p>
             <span class="span-borders d-none-mobile"></span>
         </div>
-        <div class="d-flex flex-direction-row txt-center w-75">
+        <div class="d-flex flex-direction-row txt-center w-75  m-t-20">
             <canvas id="myChart" class=" w-200px h-200px"></canvas>
         </div> 
 
@@ -72,7 +74,7 @@
                             <span class="input__label-content input__label-content--kuro">Votre recherche</span>
                         </label>
                     </span>
-                    <button type="submit" class="btn btn-default bg-color-none outline-none border-none " name="submitform">
+                    <button type="submit" class="pointer btn btn-default bg-color-none outline-none border-none " name="submitform">
                     <i class="fa-2x fas fa-search"></i>
                     </button>
                 </div>

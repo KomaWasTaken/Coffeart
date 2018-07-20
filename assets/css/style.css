@@ -1,7 +1,8 @@
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  WIDTHS && HEIGHTS  /////////////////////////////////////
 /////////////////////////////////////  /////////////////////////////////////*/
-html{size: 62.5%;}
+html{size: 62.5%;
+    overflow-x: hidden;}
 
 .w-100{width:100%;}
 .w-95{width:95%;}
@@ -85,11 +86,12 @@ html{size: 62.5%;}
 .m-l-50p{margin-left:50%;}
 
 
-.m-social {margin-right:20px;}
-.m-home   {margin-left:20px ;}
-.m-t-50   {margin-top:50px  ;}
-.m-t-10   {margin-top: 10px ;}
-.m-t-15   {margin-top:15px;}
+.m-social {margin-right:20px  ;}
+.m-home   {margin-left:20px   ;}
+.m-t-50   {margin-top:50px    ;}
+.m-t-10   {margin-top: 10px   ;}
+.m-t-15   {margin-top:15px    ;}
+.m-t-20   {margin-top: 20px   ;}
 .m-b-50   {margin-bottom: 50px;}
 
 /*/////////////////////////////////////  /////////////////////////////////////
@@ -251,6 +253,7 @@ html{size: 62.5%;}
 .fixed{position:fixed;}
 .absolute { position: absolute; }
 .b-40 {bottom:40px;}
+.pointer {cursor: pointer;}
 
 .logo_center {
     position: absolute;
@@ -258,6 +261,7 @@ html{size: 62.5%;}
     transform: translate(-50%);
   }
 
+.overflow-x-hidden {overflow-x: hidden;}
 #navigation a:hover{
     color: #c39e9a;
 }
