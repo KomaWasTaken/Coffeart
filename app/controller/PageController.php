@@ -56,4 +56,15 @@ class PageController extends Controller {
         )); 
         
     }
+
+    public function mentionslegales(){
+
+       ;
+
+        $template = $this->twig->loadTemplate('/Page/mentionslegales.html.twig');
+        echo $template->render(array(
+        
+        )); 
+        
+    }
 }

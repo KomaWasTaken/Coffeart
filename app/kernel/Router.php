@@ -24,6 +24,10 @@ class Router {
             $result['controller']   = 'Page';
             $result['action']       = 'resultat';
         }
+        if($request === 'mentionslegales'){ // Route vers la page résultat
+            $result['controller']   = 'Page';
+            $result['action']       = 'mentionslegales';
+        }
      }
      return $result;
     }  

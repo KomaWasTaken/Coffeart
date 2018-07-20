@@ -128,7 +128,7 @@ html{size: 62.5%;}
 
 .j-s-center{ 
     justify-self: center;}
-
+.flex-wrap{flex-wrap:wrap;}
 
 /*/////////////////////////////////////  /////////////////////////////////////
 /////////////////////////////////////  COLORS && BACKGROUNDS  ////////////////
@@ -335,7 +335,6 @@ html{size: 62.5%;}
 
     /* WIDTH & HEIGHT */
     .w-100-mobile{width:100%;}
-    .w-50-mobile{width:50%;}
     .w-20-mobile{width:20%;}
     .w-mobile-txt {width : 90%}
     .logo-mobile {width: 100px;}
@@ -343,7 +342,7 @@ html{size: 62.5%;}
     .w-50-mobile{width:50%;}    
 
     .h-100vh{height:80vh;}
-    .h-100mobile{height: 100vh;}
+    .h-100vh-mobile{height: 100vh;}
     .h-100-mobile{height:100%;}
 
     /* PADDING & MARGIN */
@@ -353,8 +352,6 @@ html{size: 62.5%;}
     .m-t-50-mobile {margin-top : 35px;}
     .m-t-70-mobile {margin-top : 70px;}
     .p-r-25-mobile{padding-right: 25px;}
-    .p-t-30-mobile{padding-top: 10px;}
-    .p-b-30-mobile{padding-bottom: 10px;}
     .line_h_normal_mobile{line-height:normal;}
     .logo-mobile {width: 100px;}
     .m-t-10-mobile{margin-top:10px;}
